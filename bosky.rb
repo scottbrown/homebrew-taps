@@ -9,10 +9,10 @@ class Bosky < Formula
   depends_on :arch => :x86_64
 
   def install
-    bin.install 'bosky'
+    bin.install 'bosky.darwin-amd64'
   end
 
   test do
-    system "#{bin}/bosky"
+    system "#{bin}/bosky.darwin-amd64"
   end
 end
